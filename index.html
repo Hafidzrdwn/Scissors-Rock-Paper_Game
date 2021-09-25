@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/headIcon.png" type="image/x-icon">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Scissors Rock Paper</title>
+</head>
+<body>
+    <audio src="sound/backsong.mp3" id="backSong"></audio>
+    <audio src="sound/startbutton.mp3" id="errorSound"></audio>
+    <audio src="sound/btnSound.mp3" id="btnSound"></audio>
+    <audio src="sound/+1 tropy.mp3" id="getTrophy"></audio>
+    <audio src="sound/you champ.mp3" id="playerChamps"></audio>
+    <audio src="sound/you lose.mp3" id="playerLose"></audio>
+    <video autoplay muted loop id="myVideo">
+        <source src="images/undersea.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    <!-- Mobile Device Warning -->
+    <div class="mb-warn">
+    <img class="error" src="images/404.svg" alt="">
+    <div class="aside">
+        <img class="nAvailable" src="images/mobile.svg" alt="">
+    <p class="m-warn">Sorry this app not available in mobile device change your device in desktop device.</p>
+    </div>
+    </div>
+    <!-- Computer animation -->
+    <img class="compFace" src="images/compFace.png" alt="">
+    <!-- Show a result in popup -->
+    <div class="overlay">
+        <div class="alert">
+            <i class="close fas fa-times"></i>
+            <img src="images/resultTrophy.png" class="trophy" alt="">
+            <h1>winner</h1>
+        </div>
+    </div>
+    <!-- End overlay -->
+     <!-- How to play popup -->
+     <div class="info-panel">
+        <i class="close fas fa-times"></i>
+        <h1>How to play ?</h1>
+        <ul>
+            <li>Untuk memulai permainan tekan tombol start.</li>
+            <li>Anda juga akan diminta untuk memilih maksimal jumlah tropi dalam permainan.</li>
+            <li>Setelah itu anda akan diminta untuk memilih skor maksimal permainan.</li>
+            <li>Setiap mencapai skor maksimal akan mendapatkan 1 trophy.</li>
+            <li>Setelah maksimal piala tercapai maka permainan akan berakhir.</li>
+        </ul>
+    </div> 
+    <!-- End how to play popup -->
+    <!-- Intro section -->
+    <div class="opening">
+        <h1>Scissors Rock Paper Game</h1>
+        <button id="start"><i class="fas fa-play"></i>start</button>
+        <p><span id="info">How to play ?</span> <span> created by <a href="https://www.instagram.com/hafidzrdwn/" target="_blank">@Hafidzrdwn</a></span></p>
+    </div>
+    <!-- End intro section -->
+    <!-- User form section -->
+    <div class="user-form">
+        <h1>Custom Your Match</h1>
+        <form action="" autocomplete="off">
+            <label for="userName" class="name-label">
+                What's your name?
+                <input type="text" id="userName" placeholder="type your name..">
+            </label>
+                <p>Maximal trophies</p>
+                <label>
+                    <input type="radio" name="max-trophies"  value="3"> 3
+                </label>
+                <label>
+                    <input type="radio" name="max-trophies"  value="4" > 4
+                </label>
+                <label>
+                    <input type="radio" name="max-trophies"  value="5" > 5
+                </label>
+                    <p>Maximal score</p>
+                 <label>
+                    <input type="radio" name="max-score"  value="5"> 5
+                </label>
+                <label>
+                    <input type="radio" name="max-score"  value="7" > 7
+                </label>
+                 <label>
+                    <input type="radio" name="max-score"  value="10" > 10
+                </label>
+                <div class="formBtn">
+                    <button class="formBack"><i class="fas fa-arrow-left"></i>Back</button>
+                    <button class="formNext">Next<i class="fas fa-arrow-right"></i></button>
+                </div>
+        </form>
+    </div>
+    <!-- End user form section -->
+    <!-- Match Container -->
+    <div class="container">
+        <div class="score">
+            <div class="player">
+                <p id="pName">Player</p>
+                <p class="player_score">0</p>
+            </div>
+            <div class="player-trophy">
+            </div>
+            <div class="comp-trophy">
+            </div>
+            <div class="computer">
+                <p>Computer</p>
+                <p class="computer_score">0</p>
+            </div>
+        </div>
+        <div class="game">
+            <img class="player-hand" src="images/Rock.png" alt="rock hand">
+            <div class="loading"></div>
+            <h1 class="winner">Choose your option..</h1>
+            <img class="comp-hand" src="images/Rock.png" alt="rock hand">
+        </div>
+        <div class="actions">
+            <button class="scissors">Scissors</button>
+            <button class="rock">Rock</button>
+            <button class="paper">Paper</button>
+        </div>
+        <div class="supBtn">
+            <button class="back"><i class="fas fa-arrow-left"></i>Back</button>
+            <button class="reset"><i class="fas fa-redo-alt"></i>Reset</button>
+        </div>
+    </div>
+    <!-- End match container -->
+    <!-- My JS -->
+    <script src="script/sweetalert2.all.min.js"></script>
+    <script src="script/game.js"></script>
+    <script src="https://kit.fontawesome.com/2e160f1ac0.js" crossorigin="anonymous"></script>
+</body>
+</html>
