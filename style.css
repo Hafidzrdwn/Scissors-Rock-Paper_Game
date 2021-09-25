@@ -209,24 +209,14 @@ body {
   color: white;
 }
 
-<<<<<<< HEAD
-.opening p span a,
-.opening span#info{
-  color: #7b8cd3;
-=======
 .opening p span a {
   color: #9babec;
->>>>>>> 5c12b22 (memperbaiki kontras warna text)
 }
 
 .opening h1 {
   font-size: 50px;
   font-family: "Lato", sans-serif;
-<<<<<<< HEAD
-  color:white;
-=======
   color: white;
->>>>>>> 5c12b22 (memperbaiki kontras warna text)
 }
 
 .opening #start {
@@ -306,11 +296,7 @@ body {
 
 .user-form label.name-label,
 .user-form p {
-<<<<<<< HEAD
-  font-size: 22px;
-=======
   font-size: 19px;
->>>>>>> 5c12b22 (memperbaiki kontras warna text)
   color: white;
 }
 .user-form label {
